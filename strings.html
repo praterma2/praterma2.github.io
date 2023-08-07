@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+    Strings page for input validation assignment, palindrome assignment 
+    and putting it all together
+    Prof. Prater
+    24Jul23
+    mprater@uat.edu
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--we need a style sheet to define the styles for our page-->
+    <link href="stringsStyle.css" rel="stylesheet" type="text/css">
+    <!--We need to link the js file with the html file so we can use the js resources-->
+    <script src="code.js"></script>
+    <!--title for the website-->
+    <title>Strings Page</title>
+</head>
+<body>
+    <h1>Welcome to my strings page, have fun!</h1>
+    <center><img id="pic" src="gnyfe.jpg"></center><br>
+    <br>
+    Please login below, if you dare...<br>
+    <br>
+    <div id="loginStatus">Status of login</div><br>
+    <br>
+    <form id="creditSubmit" onsubmit="return false">
+    First Name: <input type="text" id="fName"><br>
+    Last Name: <input type="text" id="lName"><br>
+    Zip code: <input type="text" id="zipCode"><br>
+    <br>
+    <input type="submit" onclick="checkCreds();" class="button">
+    </form>
+    <br>
+    <br>
+    <h1>palindrome checker</h1>
+    <br>
+    <div id="palinStatus">Palindrome Status</div><br>
+    <br>
+    <form id="palinSubmit" onsubmit="return false">
+    Enter Possible Palindrome: <input type="text" id="palinInput"><br>
+    <br>
+    <input type="submit" onclick="checkPalin();" class="button">
+    </form>
+    <br>
+    <br>
+    <h1>Putting it all together</h1>
+    <!--For the putting it all together
+    1. form to fill in a time in sec 
+    2. a button to start a countdown based on the number in the form
+    3. a display showing the time left
+    4. a song to play after the time-->
+    <br>
+    <br>
+    <h3 id="statusUpdate"></h3>
+    <form id="songTimeSubmit" onsubmit="return false">
+    Enter a time in seconds: <input type="number" id="timeInput"><br>
+    <br>
+    <input type="submit" onclick="setTime();" class="button">
+    </form>
+
+</body>
+</html>

@@ -5,7 +5,7 @@ body{
 
 nav{
 height: 570px;
-width: 200px;
+width: 250px;
 float: left;
 padding: 5px; 
 line-height: 30px;
@@ -22,6 +22,10 @@ footer{
 
 #bodyText{
     margin-right: 200px;
+}
+
+#rightPic{
+  text-align: right;
 }
 
 header{
